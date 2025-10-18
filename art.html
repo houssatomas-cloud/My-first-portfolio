@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Art Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="img/logo.png" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <!-- Logo -->
+      <img src="img/logo.png" alt="raccoonlogo" />
+
+      <!-- Burger Menu -->
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Paw Prints (for animation) -->
+      <div class="paw-prints"></div>
+      <!--  night mode  -->
+      <button id="theme-toggle" class="theme-btn">🌙 Night</button>
+
+      <!-- Navigation Links -->
+      <ul class="nav-menu">
+        <li><a href="index.html">home</a></li>
+        <li><a href="art.html">art</a></li>
+        <li><a href="contacts.html">contacts</a></li>
+        <li class="nav-cta">
+          <button id="comsPopupOpen">commission me !</button>
+        </li>
+      </ul>
+    </nav>
+    <!-- Commission pop up -->
+    <div id="ComsPopupW" class="ComsPopupW">
+      <div class="commsPopup">
+        <span id="comsPopupClose">&times;</span>
+        <h2>Commission form !</h2>
+        <form id="commsForm">
+          <!-- Ligne 1 -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your first name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="surname">Surname</label>
+              <input
+                type="text"
+                id="surname"
+                name="surname"
+                placeholder="Your last name"
+              />
+            </div>
+          </div>
+
+          <!-- Ligne 2 -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="typec">Type of drawing</label>
+              <input
+                type="text"
+                id="typec"
+                name="typec"
+                placeholder="Portrait, full body, etc."
+              />
+            </div>
+          </div>
+
+          <!-- Ligne 3 -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="adddetails">Additional details</label>
+              <input
+                type="text"
+                id="adddetails"
+                name="adddetails"
+                placeholder="Any extra info..."
+              />
+            </div>
+            <div class="form-group">
+              <label for="importref">Import references</label>
+              <input type="file" id="importref" name="importref" />
+            </div>
+          </div>
+
+          <!-- Bouton submit centré -->
+          <div class="form-row">
+            <button type="submit">Submit!</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <header>
+      <h1>My Art Gallery</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Full Body</h2>
+        <div class="gallery">
+          <div class="art-piece">
+            <img src="img/colombina.png" alt="Full Body Art 1" />
+            <h3>sleepy angel</h3>
+            <p>Full body character illustration.</p>
+          </div>
+          <div class="art-piece">
+            <img src="img/venti.png" alt="Full Body Art 2" />
+            <h3>venti fanart genshin</h3>
+            <p>Full body character illustration.</p>
+          </div>
+          <div class="art-piece">
+            <img src="img/kimp.png" alt="Full Body Art 3" />
+            <h3>prettiest pearl</h3>
+            <p>Full body character illustration.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Portrait</h2>
+        <div class="gallery">
+          <div class="art-piece">
+            <img src="img/FISHLE.png" alt="Portrait Art 1" />
+            <h3>fishle from genshin impact fan art</h3>
+            <p>Portrait style artwork.</p>
+          </div>
+          <!-- Add more portrait art pieces here -->
+        </div>
+      </section>
+      <section>
+        <h2>PFP</h2>
+        <div class="gallery">
+          <div class="art-piece">
+            <img src="img/sabri.png" alt="PFP Art 1" />
+            <h3>PFP Halloween</h3>
+            <p>Profile picture (PFP) art.</p>
+          </div>
+          <div class="art-piece">
+            <img src="img/sabrii.png" alt="PFP Art 2" />
+            <h3>PFP Halloween</h3>
+            <p>Profile picture (PFP) art.</p>
+          </div>
+          <div class="art-piece">
+            <img src="img/thomascat.png" alt="PFP Art " />
+            <h3>PFP Catboy</h3>
+            <p>Profile picture (PFP) art.</p>
+          </div>
+          <div class="art-piece">
+            <img src="img/tommy pfp.png" alt="PFP Art 4" />
+            <h3>PFP Halloween</h3>
+            <p>Profile picture (PFP) art.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Full Render</h2>
+        <div class="gallery">
+          <!-- Add new or experimental art pieces here -->
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="credit">© 2025 Houssa Tomas. All rights reserved.</p>
+    </footer>
+    <!-- script -->
+    <script src="script.js"></script>
+  </body>
+</html>
